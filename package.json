@@ -1,0 +1,114 @@
+{
+  "name": "logistics_consignor",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "index.js",
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.9",
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/pickers": "^3.2.4",
+    "@material-ui/styles": "^4.3.3",
+    "axios": "^0.19.0",
+    "axios-middleware": "^0.3.1",
+    "bootstrap": "^4.4.1",
+    "cordova-android": "^8.1.0",
+    "cordova-plugin-androidx": "^1.0.2",
+    "cordova-plugin-androidx-adapter": "^1.1.0",
+    "cordova-plugin-cocoapod-supportx": "^1.7.3",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "crypto-js": "^3.1.9-1",
+    "css-loader": "^3.4.2",
+    "jquery": "^3.4.1",
+    "material-table": "^1.50.0",
+    "material-ui": "^0.20.2",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.16.1",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.9.0",
+    "react-google-maps": "^9.4.5",
+    "react-icheck": "^0.3.8",
+    "react-image-crop": "^8.3.0",
+    "react-intl": "^2.9.0",
+    "react-materialize": "^3.5.9",
+    "react-otp-input": "^1.0.1",
+    "react-otp-timer": "^0.1.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-slick": "^0.24.0",
+    "react-tap-event-plugin": "^3.0.3",
+    "react-trello": "^2.2.3",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^6.1.1",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "style-loader": "^0.23.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "move": "mv build www || move build www",
+    "remove": "rm -rf www",
+    "build_android": "npm run build && npm run move && cordova build android",
+    "run_android": "npm run build && npm run remove && npm run move && cordova run android",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@csstools/normalize.css": "^10.1.0",
+    "cordova-plugin-firebasex": "^3.0.8"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-firebasex": {
+        "ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION": "17.0.0",
+        "ANDROID_FIREBASE_CORE_VERSION": "17.0.0",
+        "ANDROID_FIREBASE_MESSAGING_VERSION": "19.0.0",
+        "ANDROID_FIREBASE_CONFIG_VERSION": "18.0.0",
+        "ANDROID_FIREBASE_PERF_VERSION": "18.0.0",
+        "ANDROID_FIREBASE_AUTH_VERSION": "18.0.0",
+        "ANDROID_CRASHLYTICS_VERSION": "2.10.1",
+        "ANDROID_CRASHLYTICS_NDK_VERSION": "2.1.0",
+        "ANDROID_SHORTCUTBADGER_VERSION": "1.1.22",
+        "IOS_MIN_VERSION": "9.0",
+        "IOS_STRIP_DEBUG": "false",
+        "IOS_FIREBASE_CORE_VERSION": "6.3.0",
+        "IOS_FIREBASE_AUTH_VERSION": "6.3.0",
+        "IOS_FIREBASE_MESSAGING_VERSION": "6.3.0",
+        "IOS_FIREBASE_PERFORMANCE_VERSION": "6.3.0",
+        "IOS_FIREBASE_REMOTECONFIG_VERSION": "6.3.0",
+        "IOS_FABRIC_VERSION": "1.9.0",
+        "IOS_CRASHLYTICS_VERSION": "3.12.0"
+      },
+      "cordova-plugin-androidx-adapter": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

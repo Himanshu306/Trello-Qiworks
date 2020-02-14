@@ -1,0 +1,43 @@
+.body{
+  margin: 0px;
+  background: linear-gradient(135deg, #0079bf, #5067c5); ;
+  
+}
+.col-sm-3{
+  background-color: lightblue;
+  border-radius: 5px;
+}
+.col-sm-3 .elm-box{
+  border: solid 2px;
+  border-radius: 2px;
+  margin:5px;
+  padding: 5px;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+.text-block{
+  margin-top: 50px ;
+}
+#front-view h1{
+  font-size: 50px;
+  color: whitesmoke;
+}
+#front-view h3{
+  font-size: 36px;
+  color: whitesmoke;
+}
+#front-view p{
+  font-size: 26px;
+  color: whitesmoke;
+}
+#front-view{
+  margin-top : -20px;
+  background: linear-gradient(135deg, #0079bf, #5067c5);
+}
+@media (min-width: 250px) and (max-width: 480px) {
+  .body {
+      background: lightblue;      
+  }
+}
