@@ -149,6 +149,7 @@ class InsideDashboard extends React.Component{
 						onCardAdd={this.handleCardAdd}
                         data={this.state.boardData}
                         draggable
+                        canAddLanes={true}
                         onDataChange={this.shouldReceiveNewData}
                         eventBusHandle={this.setEventBus}
                         handleDragStart={handleDragStart}
